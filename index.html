@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Pulso Ciudadano | Entender la política para decidir mejor</title>
+  <meta name="description" content="Pulso Ciudadano explica la política con rigor, datos claros y enfoque neutral para una ciudadanía informada." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pulso Ciudadano" />
+  <meta property="og:description" content="Datos claros para ciudadanía informada." />
+  <meta property="og:type" content="website" />
+
+  <!-- Performance: preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+<header class="header" id="header">
+  <div class="container nav">
+    <div class="logo">Pulso Ciudadano</div>
+    <nav>
+      <a href="#entender">Entender</a>
+      <a href="#analisis">Análisis</a>
+      <a href="#observatorio">Observatorio</a>
+      <a href="#participacion">Participación</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Pulso Ciudadano</h1>
+      <p id="tagline" class="tagline"></p>
+      <button class="btn-primary">Explorar contenido</button>
+    </div>
+
+    <img
+      src="assets/img/imggg.jpg"
+      alt="Visual editorial Pulso Ciudadano"
+      loading="lazy"
+      onerror="this.src='assets/img/imggg'"
+      class="hero-img"
+    />
+  </div>
+</section>
+
+<!-- ENTENDER LA POLÍTICA -->
+<section id="entender" class="section">
+  <div class="container">
+    <h2>📘 Entender la Política</h2>
+    <div id="cards-entender" class="card-grid"></div>
+  </div>
+</section>
+
+<!-- ANÁLISIS -->
+<section id="analisis" class="section alt">
+  <div class="container">
+    <h2>📊 Análisis en Claro</h2>
+    <div id="articulos" class="article-grid"></div>
+  </div>
+</section>
+
+<!-- OBSERVATORIO -->
+<section id="observatorio" class="section">
+  <div class="container">
+    <h2>🔭 Observatorio</h2>
+    <canvas id="chartIndicador" height="120"></canvas>
+  </div>
+</section>
+
+<!-- PARTICIPACIÓN -->
+<section id="participacion" class="section alt">
+  <div class="container">
+    <h2>🗳️ Participación Ciudadana</h2>
+    <ul class="resource-list">
+      <li>Cómo hacer veeduría</li>
+      <li>Cómo participar en consultas públicas</li>
+      <li>Derechos del ciudadano</li>
+      <li>Guías paso a paso</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Pulso Ciudadano</strong>
+      <p>Rigor público para decisiones conscientes.</p>
+    </div>
+
+    <div>
+      <h4>Legal</h4>
+      <a href="#">Aviso legal</a>
+      <a href="#">Política de privacidad</a>
+    </div>
+
+    <div>
+      <h4>Contacto</h4>
+      <a href="mailto:contacto.pulsociudadano@gmail.com">contacto.pulsociudadano@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> Pulso Ciudadano
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/articles.js" defer></script>
+<script src="assets/js/charts.js" defer></script>
+
+</body>
+</html>
